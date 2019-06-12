@@ -503,6 +503,8 @@
 	}
 	.list-content,#main.fullwidth .list-content { padding:0 10px; }
 	
+	
+	
 	/* post pagination */
 	.post-pagination .sp-col-6 {
 		width:100%;
@@ -544,10 +546,6 @@
 		display:none;
 	}
 	
-	.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images,
-	.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary	{
-		width: 100%;
-	}
 	
 }
 

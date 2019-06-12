@@ -78,16 +78,16 @@
 									<?php endif; ?>
 									
 									<?php if(!get_theme_mod( 'hawthorn_featured_title_hide' )) : ?>
-									<h2><a href="<?php the_permalink(); ?>"><?php echo esc_html($feat_title); ?></a></h2>
+									<h2><a href="<?php echo get_permalink(); ?>"><?php echo esc_html($feat_title); ?></a></h2>
 									<?php endif; ?>
 									
-									<?php if(!get_theme_mod( 'hawthorn_featured_excerpt_hide' )) : ?>
-									<p><?php echo esc_html($feat_excerpt); ?></p>
-									<?php endif; ?>
+									<?php //if(!get_theme_mod( 'hawthorn_featured_excerpt_hide' )) : ?>
+									<p><?php //echo esc_html($feat_excerpt); ?></p>
+									<?php //endif; ?>
 									
-									<?php if(!get_theme_mod( 'hawthorn_featured_more_hide' )) : ?>
-									<a href="<?php the_permalink(); ?>" class="feat-more"><?php esc_html_e( 'Read More', 'hawthorn' ); ?></a>
-									<?php endif; ?>
+									<?php //if(!get_theme_mod( 'hawthorn_featured_more_hide' )) : ?>
+									<!--<a href="<?php //echo get_permalink(); ?>" class="feat-more"><?php// esc_html_e( 'Read More', 'hawthorn' ); ?></a>-->
+									<?php //endif; ?>
 									
 								</div>
 

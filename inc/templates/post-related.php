@@ -34,12 +34,12 @@ if ($categories) {
 				<div class="item-related">
 					
 					<?php if(has_post_thumbnail()) : ?>
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('hawthorn-misc-thumb'); ?></a>
+					<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail('hawthorn-misc-thumb'); ?></a>
 					<?php else : ?>
-					<a href="<?php the_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/default-misc.png" alt="<?php esc_attr_e('Default', 'hawthorn'); ?>" /></a>
+					<a href="<?php echo get_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/default-misc.png" alt="<?php esc_attr_e('Default', 'hawthorn'); ?>" /></a>
 					<?php endif; ?>
 					
-					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					<h4><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h4>
 					<?php if(!get_theme_mod('hawthorn_post_related_date')) : ?>	<span class="sp-date"><?php the_time( get_option('date_format') ); ?></span><?php endif; ?>
 					
 				</div>

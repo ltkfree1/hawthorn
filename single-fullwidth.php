@@ -10,7 +10,7 @@ Template Post Type: post
 		
 		<div class="sp-row">
 		
-			<div id="main" class="fullwidth post-fullwidth">
+			<div id="main" class="fullwidth">
 					
 				<div class="sp-row">
 				

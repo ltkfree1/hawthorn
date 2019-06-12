@@ -2,7 +2,6 @@
 /**
  * Plugin Name: Facebook Widget
  */
-if(!class_exists('hawthorn_facebook_widget')) {
 
 add_action( 'widgets_init', 'hawthorn_facebook_load_widget' );
 
@@ -17,13 +16,13 @@ class hawthorn_facebook_widget extends WP_Widget {
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'hawthorn_facebook_widget', 'description' => esc_html__('A widget that displays a Facebook Like Box', 'hawthorn') );
+		$widget_ops = array( 'classname' => 'hawthorn_facebook_widget', 'description' => __('A widget that displays a Facebook Like Box', 'hawthorn') );
 
 		/* Widget control settings. */
 		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'hawthorn_facebook_widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'hawthorn_facebook_widget', esc_html__('Hawthorn: Facebook Like Box', 'hawthorn'), $widget_ops, $control_ops );
+		parent::__construct( 'hawthorn_facebook_widget', __('Hawthorn: Facebook Like Box', 'hawthorn'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -39,13 +38,13 @@ class hawthorn_facebook_widget extends WP_Widget {
 		$stream = $instance['stream'];
 		$cover = $instance['cover'];
 		
-		/* Before widget */
-		echo wp_kses_post( $args['before_widget'] );
+		/* Before widget (defined by themes). */
+		echo $before_widget;
 
-		/* Display the widget title if one was input */
-		if ( $title ) {
-			echo wp_kses_post( $args['before_title'] . $title . $args['after_title'] );
-		}
+		/* Display the widget title if one was input (before and after defined by themes). */
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
 		?>
 			<div id="fb-root"></div>
 			<script>(function(d, s, id) {
@@ -59,8 +58,8 @@ class hawthorn_facebook_widget extends WP_Widget {
 			
 		<?php
 
-		/* After widget */
-		echo wp_kses_post( $args['after_widget'] );
+		/* After widget (defined by themes). */
+		echo $after_widget;
 	}
 
 	/**
@@ -79,6 +78,7 @@ class hawthorn_facebook_widget extends WP_Widget {
 		return $instance;
 	}
 
+
 	function form( $instance ) {
 
 		/* Set up some default widget settings. */
@@ -87,37 +87,39 @@ class hawthorn_facebook_widget extends WP_Widget {
 
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html_e( 'Title', 'hawthorn' ); ?>:</label>
-			<input id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'title' )); ?>" value="<?php echo esc_attr($instance['title']); ?>" style="width:96%;" />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'hawthorn' ); ?>:</label>
+			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:96%;" />
 		</p>
 		
 		<!-- Page url -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'page_url' )); ?>"><?php esc_html_e( 'Facebook Page URL', 'hawthorn' ); ?>:</label>
-			<input id="<?php echo esc_attr($this->get_field_id( 'page_url' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'page_url' )); ?>" value="<?php echo esc_url($instance['page_url']); ?>" style="width:96%;" />
-			<small><?php esc_html_e( 'Example. https://www.facebook.com/envato', 'hawthorn' ); ?></small>
+			<label for="<?php echo $this->get_field_id( 'page_url' ); ?>"><?php esc_html_e( 'Facebook Page URL', 'hawthorn' ); ?>:</label>
+			<input id="<?php echo $this->get_field_id( 'page_url' ); ?>" name="<?php echo $this->get_field_name( 'page_url' ); ?>" value="<?php echo $instance['page_url']; ?>" style="width:96%;" />
+			<small>EG. http://www.facebook.com/envato</small>
 		</p>
 
 		<!-- Faces -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'faces' )); ?>"><?php esc_html_e( 'Show Faces', 'hawthorn' ); ?>:</label>
-			<input type="checkbox" id="<?php echo esc_attr($this->get_field_id( 'faces' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'faces' )); ?>" <?php checked( (bool) $instance['faces'], true ); ?> />
+			<label for="<?php echo $this->get_field_id( 'faces' ); ?>"><?php esc_html_e( 'Show Faces', 'hawthorn' ); ?>:</label>
+			<input type="checkbox" id="<?php echo $this->get_field_id( 'faces' ); ?>" name="<?php echo $this->get_field_name( 'faces' ); ?>" <?php checked( (bool) $instance['faces'], true ); ?> />
 		</p>
 		
 		<!-- Stream -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'stream' )); ?>"><?php esc_html_e( 'Show Stream', 'hawthorn' ); ?>:</label>
-			<input type="checkbox" id="<?php echo esc_attr($this->get_field_id( 'stream' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'stream' )); ?>" <?php checked( (bool) $instance['stream'], true ); ?> />
+			<label for="<?php echo $this->get_field_id( 'stream' ); ?>"><?php esc_html_e( 'Show Stream', 'hawthorn' ); ?>:</label>
+			<input type="checkbox" id="<?php echo $this->get_field_id( 'stream' ); ?>" name="<?php echo $this->get_field_name( 'stream' ); ?>" <?php checked( (bool) $instance['stream'], true ); ?> />
 		</p>
 		
 		<!-- Cover -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'cover' )); ?>"><?php esc_html_e( 'Show Page Cover Image', 'hawthorn' ); ?>:</label>
-			<input type="checkbox" id="<?php echo esc_attr($this->get_field_id( 'cover' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'cover' )); ?>" <?php checked( (bool) $instance['cover'], true ); ?> />
+			<label for="<?php echo $this->get_field_id( 'cover' ); ?>"><?php esc_html_e( 'Show Page Cover Image', 'hawthorn' ); ?>:</label>
+			<input type="checkbox" id="<?php echo $this->get_field_id( 'cover' ); ?>" name="<?php echo $this->get_field_name( 'cover' ); ?>" <?php checked( (bool) $instance['cover'], true ); ?> />
 		</p>
+
+
 
 	<?php
 	}
 }
-}
+
 ?>

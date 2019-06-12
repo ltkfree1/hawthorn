@@ -1,0 +1,85 @@
+/**************************************************/
+/** CUSTOM STYLING FOR THE WORDPRESS CUSTOMIZER ***/
+/**************************************************/
+#customize-control-featured_id:after {
+	content:"Note: Separate each ID with a comma. The IDs you put in here will override the featured category option above.";
+	font-size:12px;
+	font-style:italic;
+	color:#888;
+}
+
+#customize-control-promo_border{
+	border-bottom:2px solid #ddd;
+	padding-bottom:6px;
+}
+
+#customize-control-promo1_url {
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 18px;
+	margin-bottom: 12px;
+}
+#customize-control-promo1_url:after {
+	content:"Note: Use http:// in front of your url.";
+	font-size:12px;
+	font-style:italic;
+	color:#888;
+}
+
+#customize-control-promo2_url {
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 18px;
+	margin-bottom: 12px;
+}
+
+#customize-control-promo2_url:after {
+	content:"Note: Use http:// in front of your url.";
+	font-size:12px;
+	font-style:italic;
+	color:#888;
+}
+
+#customize-control-promo3_url:after {
+	content:"Note: Use http:// in front of your url.";
+	font-size:12px;
+	font-style:italic;
+	color:#888;
+}
+
+#customize-control-woo_per_page:after {
+	content:"Please note Customizer preview will not immediately reflect change, simply save and refresh to see change take effect.";
+	font-size:12px;
+	font-style:italic;
+	color:#888;
+}
+
+#customize-control-wrapper_opacity:after {
+	content:"Set opacity between 0 and 1 (you can use decimal numbers such as 0.5), where 0 is no shadow at all.";
+	font-size:12px;
+	font-style:italic;
+	color:#888;
+}
+
+#customize-control-header_bg_attachment, #customize-control-menu_dropdown_text_hover_color, #customize-control-logo_width, #customize-control-secondary_header_bottom, #customize-control-text_logo_color,
+#customize-control-header_social_color_hover, #customize-control-nav_margin_bottom, #customize-control-post_color_text_heading, #customize-control-post_tag_text_hover, #customize-control-post_color_meta_comments,
+#customize-control-post_quote_text, #customize-control-color_featured_excerpt, #customize-control-color_featured_button_text_hover, #customize-control-sidebar_color_title_shadow_opacity,
+#customize-control-footer_color_widget_text, #customize-control-footer2_social_separator_line, #customize-control-misc_color_accent, #customize-control-misc_pagination_text_hover,
+#customize-control-header_search_color_hover, #customize-control-facebook_footer, #customize-control-twitter_footer, #customize-control-instagram_footer, #customize-control-pinterest_footer,
+#customize-control-bloglovin_footer, #customize-control-google_footer, #customize-control-tumblr_footer, #customize-control-youtube_footer, #customize-control-dribbble_footer, #customize-control-soundcloud_footer,
+#customize-control-vimeo_footer, #customize-control-linkedin_footer, #customize-control-snapchat_footer, #customize-control-rss_footer {
+	border-bottom:4px solid #ccc;
+	padding-bottom:20px;
+}
+
+#customize-control-custom_css textarea {
+	height:500px !important;
+}
+
+li#customize-control-post_share_facebook, #customize-control-post_related_date { margin-top:-5px; }
+li#customize-control-post_share_facebook, li#customize-control-post_share_twitter, li#customize-control-post_share_pinterest, li#customize-control-post_share_google, #customize-control-post_related_date,
+#customize-control-post_share_linkedin {
+	margin-left:24px;
+}
+li#customize-control-post_share_facebook, li#customize-control-post_share_twitter, li#customize-control-post_share_pinterest {
+
+	margin-bottom:0;
+}

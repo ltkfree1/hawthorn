@@ -15,7 +15,6 @@ jQuery(document).ready(function($) {
 		pager: ($(".bxslider div.feat-item").length > 1) ? true: false,
 		pagerType: 'short',
 		auto: true,
-		touchEnabled: false,
 		pause: 6000,
 		autoHover: true,
 		nextText: 'Next <i class="fa fa-angle-right"></i>',

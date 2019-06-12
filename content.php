@@ -62,7 +62,7 @@
 			
 			<?php if(is_single()) : else : ?>
 				<div class="post-img">
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(''); ?></a>
+					<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail(''); ?></a>
 				</div>
 			<?php endif; ?>
 				
@@ -71,7 +71,7 @@
 				<?php if(is_single()) : ?>
 					<?php the_post_thumbnail(''); ?>
 				<?php else : ?>
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(''); ?></a>
+					<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail(''); ?></a>
 				<?php endif; ?>
 			</div>
 		<?php endif; ?>
@@ -88,11 +88,11 @@
 		<?php if(is_single()) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php else : ?>
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<h2 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<?php endif; ?>
 		
 		<?php if(!get_theme_mod('hawthorn_post_date')) : ?>
-		<span class="sp-date"><a href="<?php the_permalink(); ?>"><span class="updated published"><?php the_time( get_option('date_format') ); ?></span></a></span>
+		<span class="sp-date"><a href="<?php echo get_permalink(); ?>"><span class="updated published"><?php the_time( get_option('date_format') ); ?></span></a></span>
 		<?php endif; ?>
 		
 	</div>
@@ -143,13 +143,25 @@
 				</div>
 			</div>
 			<?php endif; ?>
-				
-			<?php if(!get_theme_mod('hawthorn_post_share')) : ?>
-			<div class="<?php if(get_theme_mod('hawthorn_post_share_author') && !get_theme_mod('hawthorn_post_comment_link')) : ?>sp-col-6 left<?php elseif(!get_theme_mod('hawthorn_post_share_author') && get_theme_mod('hawthorn_post_comment_link')) : ?>sp-col-6 right<?php elseif(get_theme_mod('hawthorn_post_share_author') && get_theme_mod('hawthorn_post_comment_link')) : ?>sp-col-12<?php else : ?>sp-col-4<?php endif; ?> col-meta-share">
-				<div class="meta-share">
-					<?php if(function_exists('hawthorn_core_get_social_share')) { hawthorn_core_get_social_share(); } ?>
+			
+			<?php if(shortcode_exists('hawthorn_share')) : ?>
+				<?php echo do_shortcode('[hawthorn_share]'); ?>				
+			<?php else : ?>
+				<?php if(!get_theme_mod('hawthorn_post_share')) : ?>
+				<div class="<?php if(get_theme_mod('hawthorn_post_share_author') && !get_theme_mod('hawthorn_post_comment_link')) : ?>sp-col-6 left<?php elseif(!get_theme_mod('hawthorn_post_share_author') && get_theme_mod('hawthorn_post_comment_link')) : ?>sp-col-6 right<?php elseif(get_theme_mod('hawthorn_post_share_author') && get_theme_mod('hawthorn_post_comment_link')) : ?>sp-col-12<?php else : ?>sp-col-4<?php endif; ?> col-meta-share">
+					<div class="meta-share">
+						<?php if(!get_theme_mod('hawthorn_post_share_facebook')) : ?><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a><?php endif; ?>
+						<?php if(!get_theme_mod('hawthorn_post_share_twitter')) : ?><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20article:%20<?php print hawthorn_social_title( get_the_title() ); ?>&url=<?php echo urlencode(the_permalink()); ?><?php if(get_theme_mod('hawthorn_twitter')) : ?>&via=<?php echo esc_html(get_theme_mod('hawthorn_twitter')); ?><?php endif; ?>"><i class="fa fa-twitter"></i></a><?php endif; ?>
+						
+						<?php// $pin_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>
+						<?php /* if(!get_theme_mod('hawthorn_post_share_pinterest')) : ?><a data-pin-do="none" target="_blank" href="https://pinterest.com/pin/create/button/?url=<?php echo urlencode(the_permalink()); ?>&media=<?php echo esc_url($pin_image); ?>&description=<?php print hawthorn_social_title( get_the_title() ); ?>"><i class="fa fa-pinterest"></i></a><?php endif; */?>
+						
+						<?php if(!get_theme_mod('hawthorn_post_share_instagram')) : ?><a target="_blank" href="https://www.instagram.com/wecanmag/"><i class="fa fa-instagram"></i></a><?php endif; ?>
+						<?php if(!get_theme_mod('hawthorn_post_share_linkedin')) : ?><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&&title=<?php the_title();?>"><i class="fa fa-linkedin"></i></a><?php endif; ?>
+					</div>
 				</div>
-			</div>
+				<?php endif; ?>
+				
 			<?php endif; ?>
 			
 			<?php if(!get_theme_mod('hawthorn_post_comment_link')) : ?>

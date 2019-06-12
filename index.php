@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 	
-	<?php if(get_theme_mod('hawthorn_featured_slider')) : ?>
-	<?php get_template_part('inc/featured/featured'); ?>
-	<?php endif; ?>
+	
 	
 	<div class="sp-container content">
 	
 		<div class="sp-row">
 		
 			<div id="main" <?php if(get_theme_mod('hawthorn_sidebar_homepage') == true) : ?>class="fullwidth"<?php endif; ?>>
+			    <?php if(get_theme_mod('hawthorn_featured_slider')) : ?>
+	            <?php get_template_part('inc/featured/featured'); ?>
+	            <?php endif; ?>
 			
 				<div class="sp-row post-layout <?php if(get_theme_mod('hawthorn_home_layout') == 'full_grid' && !is_paged()) : ?>full-grid<?php elseif(get_theme_mod('hawthorn_home_layout') == 'full_grid' && is_paged()) : ?>grid<?php elseif(get_theme_mod('hawthorn_home_layout') == 'grid') : ?>grid<?php endif; ?>">
 					<?php $sp_count = 0; ?>

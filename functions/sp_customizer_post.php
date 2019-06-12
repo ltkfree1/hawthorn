@@ -73,7 +73,7 @@ $wp_customize->add_setting(
 	)
 );
 $wp_customize->add_setting(
-	'hawthorn_post_share_linkedin',
+	'hawthorn_post_share_google',
 	array(
 		'default'     => false,
 		'sanitize_callback'     => 'hawthorn_sanitize_checkbox'
@@ -130,7 +130,6 @@ $wp_customize->add_control(
 			'choices'        => array(
 				'post_sidebar'   => esc_html__( 'Post w/ Sidebar', 'hawthorn' ),
 				'post_fullwidth'   => esc_html__( 'Full Width Post', 'hawthorn' ),
-				'post_fullwidth_narrow'   => esc_html__( 'Full Width Narrow Post', 'hawthorn' ),
 			)
 		)
 	)
@@ -249,11 +248,11 @@ $wp_customize->add_control(
 $wp_customize->add_control(
 	new WP_Customize_Control(
 		$wp_customize,
-		'post_share_linkedin',
+		'post_share_google',
 		array(
-			'label'      => esc_html__( 'Hide LinkedIn Share Button', 'hawthorn' ),
+			'label'      => esc_html__( 'Hide Google+ Share Button', 'hawthorn' ),
 			'section'    => 'hawthorn_new_section_post',
-			'settings'   => 'hawthorn_post_share_linkedin',
+			'settings'   => 'hawthorn_post_share_google',
 			'type'		 => 'checkbox',
 			'priority'	 => 14
 		)

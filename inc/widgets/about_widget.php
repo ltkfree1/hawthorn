@@ -3,8 +3,6 @@
  * Plugin Name: About Widget
  */
 
-if(!class_exists('hawthorn_about_widget')) {
- 
 add_action( 'widgets_init', 'hawthorn_about_load_widget' );
 
 function hawthorn_about_load_widget() {
@@ -18,13 +16,13 @@ class hawthorn_about_widget extends WP_Widget {
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'hawthorn_about_widget', 'description' => esc_html__('An About Me Widget', 'hawthorn') );
+		$widget_ops = array( 'classname' => 'hawthorn_about_widget', 'description' => __('An About Me Widget', 'hawthorn') );
 
 		/* Widget control settings. */
 		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'hawthorn_about_widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'hawthorn_about_widget', esc_html__('Hawthorn: About Me', 'hawthorn'), $widget_ops, $control_ops );
+		parent::__construct( 'hawthorn_about_widget', __('Hawthorn: About Me', 'hawthorn'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -40,20 +38,20 @@ class hawthorn_about_widget extends WP_Widget {
 		$description = $instance['description'];
 		$signing = $instance['signing'];
 		
-		/* Before widget */
-		echo wp_kses_post( $args['before_widget'] );
+		/* Before widget (defined by themes). */
+		echo $before_widget;
 
-		/* Display the widget title if one was input */
-		if ( $title ) {
-			echo wp_kses_post( $args['before_title'] . $title . $args['after_title'] );
-		}
+		/* Display the widget title if one was input (before and after defined by themes). */
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
 		?>
 			
 			<div class="about-widget">
 				
 				<?php if($image) : ?>
 				<div class="about-img">
-					<?php if($image_link) : ?><a href="<?php echo esc_url($image_link); ?>"><?php endif; ?><img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($title); ?>" /><?php if($image_link) : ?></a><?php endif; ?>
+					<?php if($image_link) : ?><a href="<?php echo esc_url($image_link); ?>"><?php endif; ?><img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_html($title); ?>" /><?php if($image_link) : ?></a><?php endif; ?>
 				</div>
 				<?php endif; ?>
 				
@@ -62,15 +60,15 @@ class hawthorn_about_widget extends WP_Widget {
 				<?php endif; ?>
 				
 				<?php if($signing) : ?>
-				<span class="about-autograph"><img src="<?php echo esc_url($signing); ?>" alt="<?php echo esc_attr($title); ?>" /></span>
+				<span class="about-autograph"><img src="<?php echo esc_url($signing); ?>" alt="" /></span>
 				<?php endif; ?>
 				
 			</div>
 			
 		<?php
 
-		/* After widget */
-		echo wp_kses_post( $args['after_widget'] );
+		/* After widget (defined by themes). */
+		echo $after_widget;
 	}
 
 	/**
@@ -89,6 +87,7 @@ class hawthorn_about_widget extends WP_Widget {
 		return $instance;
 	}
 
+
 	function form( $instance ) {
 
 		/* Set up some default widget settings. */
@@ -97,38 +96,39 @@ class hawthorn_about_widget extends WP_Widget {
 
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html_e( 'Title', 'hawthorn' ); ?>:</label>
-			<input id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'title' )); ?>" value="<?php echo esc_attr($instance['title']); ?>" style="width:96%;" />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'hawthorn' ); ?>:</label>
+			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:96%;" />
 		</p>
 		
 		<!-- image url -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'image' )); ?>"><?php esc_html_e( 'Image URL', 'hawthorn' ); ?>:</label>
-			<input id="<?php echo esc_attr($this->get_field_id( 'image' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'image' )); ?>" value="<?php echo esc_url($instance['image']); ?>" style="width:96%;" /><br />
+			<label for="<?php echo $this->get_field_id( 'image' ); ?>"><?php esc_html_e( 'Image URL', 'hawthorn' ); ?>:</label>
+			<input id="<?php echo $this->get_field_id( 'image' ); ?>" name="<?php echo $this->get_field_name( 'image' ); ?>" value="<?php echo $instance['image']; ?>" style="width:96%;" /><br />
 			<small><?php esc_html_e( 'Enter the image URL you want to use. You can upload your image via Media > Add New', 'hawthorn' ); ?></small>
 		</p>
 		
 		<!-- image link -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'image_link' )); ?>"><?php esc_html_e( 'Image Link', 'hawthorn' ); ?>:</label>
-			<input id="<?php echo esc_attr($this->get_field_id( 'image_link' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'image_link' )); ?>" value="<?php echo esc_url($instance['image_link']); ?>" style="width:96%;" /><br />
+			<label for="<?php echo $this->get_field_id( 'image_link' ); ?>"><?php esc_html_e( 'Image Link', 'hawthorn' ); ?>:</label>
+			<input id="<?php echo $this->get_field_id( 'image_link' ); ?>" name="<?php echo $this->get_field_name( 'image_link' ); ?>" value="<?php echo $instance['image_link']; ?>" style="width:96%;" /><br />
 			<small><?php esc_html_e( 'Enter a link you want the about me image to go to.', 'hawthorn' ); ?></small>
 		</p>
 		
 		<!-- description -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'description' )); ?>"><?php esc_html_e( 'About me text', 'hawthorn' ); ?>:</label>
-			<textarea id="<?php echo esc_attr($this->get_field_id( 'description' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'description' )); ?>" style="width:95%;" rows="6"><?php echo esc_textarea($instance['description']); ?></textarea>
+			<label for="<?php echo $this->get_field_id( 'description' ); ?>"><?php esc_html_e( 'About me text', 'hawthorn' ); ?>:</label>
+			<textarea id="<?php echo $this->get_field_id( 'description' ); ?>" name="<?php echo $this->get_field_name( 'description' ); ?>" style="width:95%;" rows="6"><?php echo $instance['description']; ?></textarea>
 		</p>
 		
 		<!-- autograph url -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'signing' )); ?>"><?php esc_html_e( 'Autograph Image URL', 'hawthorn' ); ?>:</label>
-			<input id="<?php echo esc_attr($this->get_field_id( 'signing' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'signing' )); ?>" value="<?php echo esc_url($instance['signing']); ?>" style="width:96%;" /><br />
+			<label for="<?php echo $this->get_field_id( 'signing' ); ?>"><?php esc_html_e( 'Autograph Image URL', 'hawthorn' ); ?>:</label>
+			<input id="<?php echo $this->get_field_id( 'signing' ); ?>" name="<?php echo $this->get_field_name( 'signing' ); ?>" value="<?php echo $instance['signing']; ?>" style="width:96%;" /><br />
 		</p>
+
 
 	<?php
 	}
 }
-}
+
 ?>

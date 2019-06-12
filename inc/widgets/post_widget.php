@@ -3,8 +3,6 @@
  * Plugin Name: Latest Posts Widget
  */
 
-if(!class_exists('hawthorn_latest_news_widget')) {
-
 add_action( 'widgets_init', 'hawthorn_latest_news_load_widget' );
 
 function hawthorn_latest_news_load_widget() {
@@ -18,13 +16,13 @@ class hawthorn_latest_news_widget extends WP_Widget {
 	 */
 	function __construct() {
 		/* Widget settings. */
-		$widget_ops = array( 'classname' => 'hawthorn_latest_news_widget', 'description' => esc_html__('A post widget that can display your latest posts, posts from a category, or hand-picked posts by ID.', 'hawthorn') );
+		$widget_ops = array( 'classname' => 'hawthorn_latest_news_widget', 'description' => __('A post widget that can display your latest posts, posts from a category, or hand-picked posts by ID.', 'hawthorn') );
 
 		/* Widget control settings. */
 		$control_ops = array( 'width' => 250, 'height' => 350, 'id_base' => 'hawthorn_latest_news_widget' );
 
 		/* Create the widget. */
-		parent::__construct( 'hawthorn_latest_news_widget', esc_html__('Hawthorn: Post Widget', 'hawthorn'), $widget_ops, $control_ops );
+		parent::__construct( 'hawthorn_latest_news_widget', __('Hawthorn: Post Widget', 'hawthorn'), $widget_ops, $control_ops );
 	}
 
 	/**
@@ -42,25 +40,26 @@ class hawthorn_latest_news_widget extends WP_Widget {
 		$date = $instance['date'];
 		$postids = $instance['postids'];
 		
+		
 		if($postids) {
 			$postids = explode(',', $postids);
-			$args_posts = array( 'showposts' => $number, 'post_type' => array('post', 'page'), 'post__in' => $postids, 'orderby' => 'post__in', 'ignore_sticky_posts' => 1 );
+			$args = array( 'showposts' => $number, 'post_type' => array('post', 'page'), 'post__in' => $postids, 'orderby' => 'post__in', 'ignore_sticky_posts' => 1 );
 		} else {
-			$args_posts = array( 'showposts' => $number, 'nopaging' => 0, 'post_status' => 'publish', 'ignore_sticky_posts' => 1, 'cat' => $categories );
+			$args = array( 'showposts' => $number, 'nopaging' => 0, 'post_status' => 'publish', 'ignore_sticky_posts' => 1, 'cat' => $categories );
 		}
 		
-		$loop = new WP_Query($args_posts);
+		$loop = new WP_Query($args);
 		if ($loop->have_posts()) :
 		
 		$number_count = 0;
 		
-		/* Before widget */
-		echo wp_kses_post( $args['before_widget'] );
+		/* Before widget (defined by themes). */
+		echo $before_widget;
 
-		/* Display the widget title if one was input */
-		if ( $title ) {
-			echo wp_kses_post( $args['before_title'] . $title . $args['after_title'] );
-		}
+		/* Display the widget title if one was input (before and after defined by themes). */
+		if ( $title )
+			echo $before_title . $title . $after_title;
+
 		?>
 			
 			<?php  while ($loop->have_posts()) : $loop->the_post(); ?>
@@ -73,15 +72,15 @@ class hawthorn_latest_news_widget extends WP_Widget {
 					<div class="side-pop-img">
 						
 						<?php if(has_post_thumbnail()) : ?>
-						<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('hawthorn-grid-thumb'); ?></a>
+						<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail('hawthorn-grid-thumb'); ?></a>
 						<?php else : ?>
-						<a href="<?php the_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/default-grid.png" alt="<?php esc_attr_e('Default', 'hawthorn'); ?>" /></a>
+						<a href="<?php echo get_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/default-grid.png" alt="<?php esc_attr_e('Default', 'hawthorn'); ?>" /></a>
 						<?php endif; ?>
 						
-						<?php if($counter) : ?><span class="side-count"><?php echo esc_html($number_count); ?></span><?php endif; ?>
+						<?php if($counter) : ?><span class="side-count"><?php echo $number_count; ?></span><?php endif; ?>
 						
 						<div class="side-pop-content">
-							<h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
+							<h4><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h4>
 							<?php if(!$date) : ?><span class="sp-date"><?php the_time( get_option('date_format') ); ?></span><?php endif; ?>
 						</div>
 					</div>
@@ -93,15 +92,15 @@ class hawthorn_latest_news_widget extends WP_Widget {
 					
 					<div class="side-pop-img">
 						<?php if(has_post_thumbnail()) : ?>
-						<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('hawthorn-grid-thumb'); ?></a>
+						<a href="<?php echo get_permalink() ?>"><?php the_post_thumbnail('hawthorn-grid-thumb'); ?></a>
 						<?php else : ?>
-						<a href="<?php the_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/default-grid.png" alt="<?php esc_attr_e('Default', 'hawthorn'); ?>" /></a>
+						<a href="<?php echo get_permalink() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/default-grid.png" alt="<?php esc_attr_e('Default', 'hawthorn'); ?>" /></a>
 						<?php endif; ?>
-						<?php if($counter) : ?><span class="side-count"><?php echo esc_html($number_count); ?></span><?php endif; ?>
+						<?php if($counter) : ?><span class="side-count"><?php echo $number_count; ?></span><?php endif; ?>
 					</div>
 					
 					<div class="side-pop-content">
-						<h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
+						<h4><a href="<?php echo get_permalink() ?>"><?php the_title(); ?></a></h4>
 						<?php if(!$date) : ?><span class="sp-date"><?php the_time( get_option('date_format') ); ?></span><?php endif; ?>
 					</div>
 				
@@ -110,11 +109,12 @@ class hawthorn_latest_news_widget extends WP_Widget {
 			
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
-			<?php /* After widget */ echo wp_kses_post( $args['after_widget'] ); ?>
+			<?php /* After widget (defined by themes). */ echo $after_widget; ?>
 			<?php endif; ?>
 			
 		<?php
 
+		
 	}
 
 	/**
@@ -139,65 +139,62 @@ class hawthorn_latest_news_widget extends WP_Widget {
 	function form( $instance ) {
 
 		/* Set up some default widget settings. */
-		$defaults = array( 'title' => esc_html__('Latest Posts', 'hawthorn'), 'number' => 3, 'categories' => '', 'layout' => '', 'date' => false, 'counter' => false, 'postids' => '');
+		$defaults = array( 'title' => __('Latest Posts', 'hawthorn'), 'number' => 3, 'categories' => '', 'layout' => '', 'date' => false, 'counter' => false, 'postids' => '');
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 
 		<!-- Widget Title: Text Input -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'title' )); ?>"><?php esc_html_e('Title:', 'hawthorn'); ?></label>
-			<input  type="text" class="widefat" id="<?php echo esc_attr($this->get_field_id( 'title' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'title' )); ?>" value="<?php echo esc_attr($instance['title']); ?>"  />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'hawthorn'); ?></label>
+			<input  type="text" class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>"  />
 		</p>
 		
 		<!-- Layout -->
 		<p>
-		<label for="<?php echo esc_attr($this->get_field_id('layout')); ?>"><?php esc_html_e( 'Choose Layout', 'hawthorn' ); ?>:</label> 
-		<select id="<?php echo esc_attr($this->get_field_id('layout')); ?>" name="<?php echo esc_attr($this->get_field_name('layout')); ?>" class="widefat categories" style="width:100%;">
-			<option value='small_thumb' <?php if ('small_thumb' == $instance['layout']) echo 'selected="selected"'; ?>><?php esc_html_e( 'Small Thumbnail', 'hawthorn' ); ?></option>
-			<option value='big_thumb' <?php if ('big_thumb' == $instance['layout']) echo 'selected="selected"'; ?>><?php esc_html_e( 'Big Thumbnail', 'hawthorn' ); ?></option>
-			<option value='big_thumb_overlay' <?php if ('big_thumb_overlay' == $instance['layout']) echo 'selected="selected"'; ?>><?php esc_html_e( 'Big Thumbnail w/ Overlay', 'hawthorn' ); ?></option>
+		<label for="<?php echo $this->get_field_id('layout'); ?>"><?php _e( 'Choose Layout', 'hawthorn' ); ?>:</label> 
+		<select id="<?php echo $this->get_field_id('layout'); ?>" name="<?php echo $this->get_field_name('layout'); ?>" class="widefat categories" style="width:100%;">
+			<option value='small_thumb' <?php if ('small_thumb' == $instance['layout']) echo 'selected="selected"'; ?>><?php _e( 'Small Thumbnail', 'hawthorn' ); ?></option>
+			<option value='big_thumb' <?php if ('big_thumb' == $instance['layout']) echo 'selected="selected"'; ?>><?php _e( 'Big Thumbnail', 'hawthorn' ); ?></option>
+			<option value='big_thumb_overlay' <?php if ('big_thumb_overlay' == $instance['layout']) echo 'selected="selected"'; ?>><?php _e( 'Big Thumbnail w/ Overlay', 'hawthorn' ); ?></option>
 		</select>
 		</p>
 		
 		<!-- Category -->
 		<p>
-		<label for="<?php echo esc_attr($this->get_field_id('categories')); ?>"><?php esc_html_e( 'Filter by Category', 'hawthorn' ); ?>:</label> 
-		<select id="<?php echo esc_attr($this->get_field_id('categories')); ?>" name="<?php echo esc_attr($this->get_field_name('categories')); ?>" class="widefat categories" style="width:100%;">
-			<option value='all' <?php if ('all' == $instance['categories']) echo 'selected="selected"'; ?>><?php esc_html_e( 'All categories', 'hawthorn' ); ?></option>
+		<label for="<?php echo $this->get_field_id('categories'); ?>"><?php _e( 'Filter by Category', 'hawthorn' ); ?>:</label> 
+		<select id="<?php echo $this->get_field_id('categories'); ?>" name="<?php echo $this->get_field_name('categories'); ?>" class="widefat categories" style="width:100%;">
+			<option value='all' <?php if ('all' == $instance['categories']) echo 'selected="selected"'; ?>>All categories</option>
 			<?php $categories = get_categories('hide_empty=0&depth=1&type=post'); ?>
 			<?php foreach($categories as $category) { ?>
-			<option value='<?php echo esc_attr($category->term_id); ?>' <?php if ($category->term_id == $instance['categories']) echo 'selected="selected"'; ?>><?php echo esc_attr($category->cat_name); ?></option>
+			<option value='<?php echo $category->term_id; ?>' <?php if ($category->term_id == $instance['categories']) echo 'selected="selected"'; ?>><?php echo $category->cat_name; ?></option>
 			<?php } ?>
 		</select>
 		</p>
 		
-		<!-- Post IDs -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'postids' )); ?>"><?php esc_html_e('Post IDs (separate with comma):', 'hawthorn'); ?></label>
-			<input  type="text" class="widefat" id="<?php echo esc_attr($this->get_field_id( 'postids' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'postids' )); ?>" value="<?php echo esc_attr($instance['postids']); ?>" size="3" />
+			<label for="<?php echo $this->get_field_id( 'postids' ); ?>"><?php _e('Post IDs (separate with comma):', 'hawthorn'); ?></label>
+			<input  type="text" class="widefat" id="<?php echo $this->get_field_id( 'postids' ); ?>" name="<?php echo $this->get_field_name( 'postids' ); ?>" value="<?php echo $instance['postids']; ?>" size="3" />
 			<small><?php esc_html_e( 'Display specific posts using post IDs. This option will override the category option above.', 'hawthorn' ); ?></small>
 		</p>
 		
 		<!-- Number of posts -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'number' )); ?>"><?php esc_html_e('Number of posts to show:', 'hawthorn'); ?></label>
-			<input  type="text" class="widefat" id="<?php echo esc_attr($this->get_field_id( 'number' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'number' )); ?>" value="<?php echo esc_attr($instance['number']); ?>" size="3" />
+			<label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e('Number of posts to show:', 'hawthorn'); ?></label>
+			<input  type="text" class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" value="<?php echo $instance['number']; ?>" size="3" />
 		</p>
 		
-		<!-- Numbering -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'counter' )); ?>"><?php esc_html_e( 'Add Numbering', 'hawthorn' ); ?>:</label>
-			<input type="checkbox" id="<?php echo esc_attr($this->get_field_id( 'counter' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'counter' )); ?>" <?php checked( (bool) $instance['counter'], true ); ?> />
+			<label for="<?php echo $this->get_field_id( 'counter' ); ?>"><?php _e( 'Add Numbering', 'hawthorn' ); ?>:</label>
+			<input type="checkbox" id="<?php echo $this->get_field_id( 'counter' ); ?>" name="<?php echo $this->get_field_name( 'counter' ); ?>" <?php checked( (bool) $instance['counter'], true ); ?> />
 		</p>
 		
-		<!-- Date -->
 		<p>
-			<label for="<?php echo esc_attr($this->get_field_id( 'date' )); ?>"><?php esc_html_e( 'Hide Date', 'hawthorn' ); ?>:</label>
-			<input type="checkbox" id="<?php echo esc_attr($this->get_field_id( 'date' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'date' )); ?>" <?php checked( (bool) $instance['date'], true ); ?> />
+			<label for="<?php echo $this->get_field_id( 'date' ); ?>"><?php _e( 'Hide Date', 'hawthorn' ); ?>:</label>
+			<input type="checkbox" id="<?php echo $this->get_field_id( 'date' ); ?>" name="<?php echo $this->get_field_name( 'date' ); ?>" <?php checked( (bool) $instance['date'], true ); ?> />
 		</p>
 
 
 	<?php
 	}
 }
-}
+
 ?>

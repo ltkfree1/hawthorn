@@ -1,5 +1,12 @@
 <?php
 /**
+ * This file represents an example of the code that themes would use to register
+ * the required plugins.
+ *
+ * It is expected that theme authors would copy and paste this code into their
+ * functions.php file, and amend to suit.
+ *
+ * @see http://tgmpluginactivation.com/configuration/ for detailed documentation.
  *
  * @package    TGM-Plugin-Activation
  * @subpackage Example
@@ -9,6 +16,21 @@
  * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
  * @link       https://github.com/TGMPA/TGM-Plugin-Activation
  */
+
+/**
+ * Include the TGM_Plugin_Activation class.
+ *
+ * Depending on your implementation, you may want to change the include call:
+ *
+ * Parent Theme:
+ * require_once get_template_directory() . '/path/to/class-tgm-plugin-activation.php';
+ *
+ * Child Theme:
+ * require_once get_stylesheet_directory() . '/path/to/class-tgm-plugin-activation.php';
+ *
+ * Plugin:
+ * require_once dirname( __FILE__ ) . '/path/to/class-tgm-plugin-activation.php';
+ */
 require_once get_template_directory() . '/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'hawthorn_register_required_plugins' );
@@ -17,22 +39,13 @@ add_action( 'tgmpa_register', 'hawthorn_register_required_plugins' );
 function hawthorn_register_required_plugins() {
 
 	$plugins = array(
-		array(
-			'name'     				=> 'Hawthorn Core',
-			'slug'     				=> 'hawthorn-core',
-			'source'   				=> get_stylesheet_directory() . '/plugins/hawthorn-core.zip',
-			'required' 				=> true,
-			'version' 				=> '1.0',
-			'force_activation' 		=> false,
-			'force_deactivation' 	=> false,
-			'external_url' 			=> '',
-		),
+
 		array(
 			'name'     				=> 'Hawthorn Meta Fields',
 			'slug'     				=> 'hawthorn-meta-fields',
 			'source'   				=> get_stylesheet_directory() . '/plugins/hawthorn-meta-fields.zip',
 			'required' 				=> false,
-			'version' 				=> '1.1',
+			'version' 				=> '',
 			'force_activation' 		=> false,
 			'force_deactivation' 	=> false,
 			'external_url' 			=> '',
@@ -42,7 +55,7 @@ function hawthorn_register_required_plugins() {
 			'slug'     				=> 'vafpress-post-formats-ui-develop',
 			'source'   				=> get_stylesheet_directory() . '/plugins/vafpress-post-formats-ui-develop.zip',
 			'required' 				=> false,
-			'version' 				=> '1.6.1',
+			'version' 				=> '',
 			'force_activation' 		=> false,
 			'force_deactivation' 	=> false,
 			'external_url' 			=> '',

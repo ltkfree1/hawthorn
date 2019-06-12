@@ -34,7 +34,7 @@ $wp_customize->add_setting(
 $wp_customize->add_setting(
 	'hawthorn_footer_text_copyright',
 	array(
-		'default'     => wp_kses( __('(C) Copyright 2019 - Solo Pine Designs. All Rights Reserved. Designed & Developed by <a href="//solopine.com">Solo Pine</a>.', 'hawthorn'), array( 'i' => array( 'class' => array() ), 'a' => array( 'href' => array() ), 'strong' => array() )  ),
+		'default'     => wp_kses( __('(C) Copyright 2018 - Solo Pine Designs. All Rights Reserved. Designed & Developed by <a href="//solopine.com">Solo Pine</a>.', 'hawthorn'), array( 'i' => array( 'class' => array() ), 'a' => array( 'href' => array() ), 'strong' => array() )  ),
 		'sanitize_callback'     => 'wp_kses_post'
 	)
 );

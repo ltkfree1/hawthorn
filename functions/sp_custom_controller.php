@@ -28,6 +28,19 @@ function hawthorn_customize_register($wp_customize) {
 		}
 	}
 	
+	class Customize_CustomCss_Control extends WP_Customize_Control {
+		public $type = 'custom_css';
+	 
+		public function render_content() {
+			?>
+			<label>
+			<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
+			<textarea style="width:100%; height:150px;" <?php $this->link(); ?>><?php echo $this->value(); ?></textarea>
+			</label>
+			<?php
+		}
+	}
+	
 	class Customize_Number2_Control extends WP_Customize_Control {
 		public $type = 'number2';
 	 
@@ -56,7 +69,7 @@ if (class_exists('WP_Customize_Control')) {
                 array(
                     'name'              => '_customize-dropdown-categories-' . $this->id,
                     'echo'              => 0,
-                    'show_option_none'  => esc_html__( '&mdash; Select &mdash;', 'hawthorn' ),
+                    'show_option_none'  => __( '&mdash; Select &mdash;', 'hawthorn' ),
                     'option_none_value' => '0',
                     'selected'          => $this->value(),
                 )

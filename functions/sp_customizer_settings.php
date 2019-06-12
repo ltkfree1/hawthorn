@@ -19,12 +19,19 @@ function hawthorn_register_theme_customizer( $wp_customize ) {
 	include( get_template_directory() . '/functions/sp_customizer_header.php');
 	include( get_template_directory() . '/functions/sp_customizer_footer.php');
 	include( get_template_directory() . '/functions/sp_customizer_featured.php');
+	include( get_template_directory() . '/functions/sp_customizer_social.php');
 	include( get_template_directory() . '/functions/sp_customizer_post.php');
 	include( get_template_directory() . '/functions/sp_customizer_page.php');
 	include( get_template_directory() . '/functions/sp_customizer_colors.php');
 	if ( class_exists( 'WooCommerce' ) ) {
 	include( get_template_directory() . '/functions/sp_customizer_woo.php');
 	}
+	
+	// Remove Sections
+	//$wp_customize->remove_section( 'title_tagline');
+	$wp_customize->remove_section( 'colors');
+	$wp_customize->remove_section( 'background_image');
+	$wp_customize->remove_section( 'static_front_page');
  
 }
 add_action( 'customize_register', 'hawthorn_register_theme_customizer' );

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Hawthorn\n"
-"POT-Creation-Date: 2019-05-31 15:33-0800\n"
-"PO-Revision-Date: 2019-05-31 15:33-0800\n"
+"POT-Creation-Date: 2018-07-08 21:58-0800\n"
+"PO-Revision-Date: 2018-07-08 21:58-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -352,7 +352,7 @@ msgstr ""
 msgid "1 Comment"
 msgstr ""
 
-#: comments.php:17 content-page.php:49 content.php:158
+#: comments.php:17 content-page.php:53 content.php:170
 msgid "Comments"
 msgstr ""
 
@@ -403,105 +403,161 @@ msgstr ""
 msgid "by"
 msgstr ""
 
+#: footer.php:72 functions/sp_customizer_social.php:326
+msgid "Facebook"
+msgstr ""
+
+#: footer.php:73 functions/sp_customizer_social.php:365
+msgid "Twitter"
+msgstr ""
+
+#: footer.php:74 functions/sp_customizer_social.php:404
+msgid "Instagram"
+msgstr ""
+
+#: footer.php:75 functions/sp_customizer_social.php:444
+msgid "Pinterest"
+msgstr ""
+
+#: footer.php:76 functions/sp_customizer_social.php:484
+msgid "Bloglovin"
+msgstr ""
+
+#: footer.php:77
+msgid "Google+"
+msgstr ""
+
+#: footer.php:78 functions/sp_customizer_social.php:564
+msgid "Tumblr"
+msgstr ""
+
+#: footer.php:79 functions/sp_customizer_social.php:604
+msgid "Youtube"
+msgstr ""
+
+#: footer.php:80 functions/sp_customizer_social.php:644
+msgid "Dribbble"
+msgstr ""
+
+#: footer.php:81 functions/sp_customizer_social.php:684
+msgid "Soundcloud"
+msgstr ""
+
+#: footer.php:82 functions/sp_customizer_social.php:724
+msgid "Vimeo"
+msgstr ""
+
+#: footer.php:83
+msgid "LinkedIn"
+msgstr ""
+
+#: footer.php:84 functions/sp_customizer_social.php:804
+msgid "Snapchat"
+msgstr ""
+
+#: footer.php:85
+msgid "RSS"
+msgstr ""
+
 #: functions.php:20
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:123
+#: functions.php:116
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:129
+#: functions.php:122
 msgid "Widgets here will appear vertically to the right of your content."
 msgstr ""
 
-#: functions.php:132
+#: functions.php:125
 msgid "Instagram Footer"
 msgstr ""
 
-#: functions.php:138
+#: functions.php:131
 msgid ""
 "Use the \"Instagram\" widget here. IMPORTANT: For best result set number of "
 "photos to 8."
 msgstr ""
 
-#: functions.php:141
+#: functions.php:134
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:140
 msgid "Widgets here will appear in Footer column 1"
 msgstr ""
 
-#: functions.php:150
+#: functions.php:143
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:149
 msgid "Widgets here will appear in Footer column 2"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:152
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:158
 msgid "Widgets here will appear in Footer column 3"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:161
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:174
+#: functions.php:167
 msgid "Widgets here will appear in Footer column 5"
 msgstr ""
 
-#: functions.php:191
+#: functions.php:184
 msgid ""
 "<h4 style=\"font-size:20px;\">Hawthorn Demo Content</h4>This option is NOT "
 "recommend if you already have content on your site. Only use this option if "
 "you want to include all the demo content (posts, categories, pages, menus)."
 msgstr ""
 
-#: functions.php:235
+#: functions.php:228
 msgid "Reply"
 msgstr ""
 
-#: functions.php:236
+#: functions.php:229
 msgid "Edit"
 msgstr ""
 
-#: functions.php:239
+#: functions.php:232
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: functions.php:241
+#: functions.php:234
 msgid "Comment awaiting approval"
 msgstr ""
 
-#: functions.php:264 page-blog.php:121
+#: functions.php:257 page-blog.php:121
 msgid "Older Posts <i class=\"fa fa-angle-right\"></i>"
 msgstr ""
 
-#: functions.php:265 page-blog.php:122
+#: functions.php:258 page-blog.php:122
 msgid "<i class=\"fa fa-angle-left\"></i> Newer Posts"
 msgstr ""
 
-#: functions.php:320
+#: functions.php:343
 msgid "WooCommerce Sidebar"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:349
 msgid "Widgets here will appear on your WooCommerce shop and product pages."
 msgstr ""
 
-#: functions.php:379
+#: functions.php:402
 msgid "View your shopping cart"
 msgstr ""
 
-#: functions/sp_custom_controller.php:59
+#: functions/sp_custom_controller.php:72
 msgid "&mdash; Select &mdash;"
 msgstr ""
 
@@ -1305,76 +1361,200 @@ msgstr ""
 msgid "Full Width Post"
 msgstr ""
 
-#: functions/sp_customizer_post.php:133
-msgid "Full Width Narrow Post"
-msgstr ""
-
-#: functions/sp_customizer_post.php:143
+#: functions/sp_customizer_post.php:142
 msgid "Featured Image (On Top of Post)"
 msgstr ""
 
-#: functions/sp_customizer_post.php:149
+#: functions/sp_customizer_post.php:148
 msgid "Display Featured Image"
 msgstr ""
 
-#: functions/sp_customizer_post.php:150
+#: functions/sp_customizer_post.php:149
 msgid "Hide Featured Image"
 msgstr ""
 
-#: functions/sp_customizer_post.php:151
+#: functions/sp_customizer_post.php:150
 msgid "Hide Featured Image only on single post pages"
 msgstr ""
 
-#: functions/sp_customizer_post.php:161
+#: functions/sp_customizer_post.php:160
 msgid "Hide Category"
 msgstr ""
 
-#: functions/sp_customizer_post.php:175 inc/widgets/post_widget.php:194
+#: functions/sp_customizer_post.php:174 inc/widgets/post_widget.php:191
 msgid "Hide Date"
 msgstr ""
 
-#: functions/sp_customizer_post.php:189
+#: functions/sp_customizer_post.php:188
 msgid "Hide Author Name"
 msgstr ""
 
-#: functions/sp_customizer_post.php:202
+#: functions/sp_customizer_post.php:201
 msgid "Hide All Share Buttons"
 msgstr ""
 
-#: functions/sp_customizer_post.php:215
+#: functions/sp_customizer_post.php:214
 msgid "Hide Facebook Share Button"
 msgstr ""
 
-#: functions/sp_customizer_post.php:228
+#: functions/sp_customizer_post.php:227
 msgid "Hide Twitter Share Button"
 msgstr ""
 
-#: functions/sp_customizer_post.php:241
+#: functions/sp_customizer_post.php:240
 msgid "Hide Pinterest Share Button"
 msgstr ""
 
-#: functions/sp_customizer_post.php:254
-msgid "Hide LinkedIn Share Button"
+#: functions/sp_customizer_post.php:253
+msgid "Hide Google+ Share Button"
 msgstr ""
 
-#: functions/sp_customizer_post.php:269
+#: functions/sp_customizer_post.php:268
 msgid "Hide Comment Link"
 msgstr ""
 
-#: functions/sp_customizer_post.php:282
+#: functions/sp_customizer_post.php:281
 msgid "Hide Tags"
 msgstr ""
 
-#: functions/sp_customizer_post.php:295
+#: functions/sp_customizer_post.php:294
 msgid "Hide Related Posts Box"
 msgstr ""
 
-#: functions/sp_customizer_post.php:308
+#: functions/sp_customizer_post.php:307
 msgid "Hide Related Posts Date"
 msgstr ""
 
-#: functions/sp_customizer_post.php:321
+#: functions/sp_customizer_post.php:320
 msgid "Hide Post Pagination"
+msgstr ""
+
+#: functions/sp_customizer_social.php:6
+msgid "Social Media Settings"
+msgstr ""
+
+#: functions/sp_customizer_social.php:339
+msgid "Show Facebook in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:352
+msgid "Show Facebook in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:378
+msgid "Show Twitter in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:391
+msgid "Show Twitter in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:417
+msgid "Show Instagram in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:430
+msgid "Show Instagram in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:457
+msgid "Show Pinterest in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:470
+msgid "Show Pinterest in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:497
+msgid "Show Bloglovin in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:510
+msgid "Show Bloglovin in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:524
+msgid "Google Plus"
+msgstr ""
+
+#: functions/sp_customizer_social.php:537
+msgid "Show Google in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:550
+msgid "Show Google in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:577
+msgid "Show Tumblr in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:590
+msgid "Show Tumblr in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:617
+msgid "Show Youtube in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:630
+msgid "Show Youtube in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:657
+msgid "Show Dribbble in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:670
+msgid "Show Dribbble in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:697
+msgid "Show Soundcloud in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:710
+msgid "Show Soundcloud in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:737
+msgid "Show Vimeo in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:750
+msgid "Show Vimeo in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:764
+msgid "Linkedin (Use full URL to your Linkedin profile)"
+msgstr ""
+
+#: functions/sp_customizer_social.php:777
+msgid "Show Linkedin in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:790
+msgid "Show Linkedin in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:817
+msgid "Show Snapchat in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:830
+msgid "Show Snapchat in Footer"
+msgstr ""
+
+#: functions/sp_customizer_social.php:844
+msgid "RSS Link"
+msgstr ""
+
+#: functions/sp_customizer_social.php:857
+msgid "Show RSS in Header"
+msgstr ""
+
+#: functions/sp_customizer_social.php:870
+msgid "Show RSS in Footer"
 msgstr ""
 
 #: functions/sp_customizer_woo.php:6
@@ -1421,59 +1601,55 @@ msgstr ""
 msgid "You Might Also Like..."
 msgstr ""
 
-#: inc/widgets/about_widget.php:21
+#: inc/widgets/about_widget.php:19
 msgid "An About Me Widget"
 msgstr ""
 
-#: inc/widgets/about_widget.php:27
+#: inc/widgets/about_widget.php:25
 msgid "Hawthorn: About Me"
 msgstr ""
 
-#: inc/widgets/about_widget.php:100 inc/widgets/facebook_widget.php:90
-#: inc/widgets/promo_widget.php:101 inc/widgets/social_widget.php:122
+#: inc/widgets/about_widget.php:99 inc/widgets/facebook_widget.php:90
+#: inc/widgets/promo_widget.php:100 inc/widgets/social_widget.php:119
 msgid "Title"
 msgstr ""
 
-#: inc/widgets/about_widget.php:106
+#: inc/widgets/about_widget.php:105
 msgid "Image URL"
 msgstr ""
 
-#: inc/widgets/about_widget.php:108
+#: inc/widgets/about_widget.php:107
 msgid ""
 "Enter the image URL you want to use. You can upload your image via Media > "
 "Add New"
 msgstr ""
 
-#: inc/widgets/about_widget.php:113
+#: inc/widgets/about_widget.php:112
 msgid "Image Link"
 msgstr ""
 
-#: inc/widgets/about_widget.php:115
+#: inc/widgets/about_widget.php:114
 msgid "Enter a link you want the about me image to go to."
 msgstr ""
 
-#: inc/widgets/about_widget.php:120
+#: inc/widgets/about_widget.php:119
 msgid "About me text"
 msgstr ""
 
-#: inc/widgets/about_widget.php:126
+#: inc/widgets/about_widget.php:125
 msgid "Autograph Image URL"
 msgstr ""
 
-#: inc/widgets/facebook_widget.php:20
+#: inc/widgets/facebook_widget.php:19
 msgid "A widget that displays a Facebook Like Box"
 msgstr ""
 
-#: inc/widgets/facebook_widget.php:26
+#: inc/widgets/facebook_widget.php:25
 msgid "Hawthorn: Facebook Like Box"
 msgstr ""
 
 #: inc/widgets/facebook_widget.php:96
 msgid "Facebook Page URL"
-msgstr ""
-
-#: inc/widgets/facebook_widget.php:98
-msgid "Example. https://www.facebook.com/envato"
 msgstr ""
 
 #: inc/widgets/facebook_widget.php:103
@@ -1488,13 +1664,13 @@ msgstr ""
 msgid "Show Page Cover Image"
 msgstr ""
 
-#: inc/widgets/post_widget.php:21
+#: inc/widgets/post_widget.php:19
 msgid ""
 "A post widget that can display your latest posts, posts from a category, or "
 "hand-picked posts by ID."
 msgstr ""
 
-#: inc/widgets/post_widget.php:27
+#: inc/widgets/post_widget.php:25
 msgid "Hawthorn: Post Widget"
 msgstr ""
 
@@ -1526,135 +1702,131 @@ msgstr ""
 msgid "Filter by Category"
 msgstr ""
 
-#: inc/widgets/post_widget.php:165
-msgid "All categories"
-msgstr ""
-
-#: inc/widgets/post_widget.php:175
+#: inc/widgets/post_widget.php:174
 msgid "Post IDs (separate with comma):"
 msgstr ""
 
-#: inc/widgets/post_widget.php:177
+#: inc/widgets/post_widget.php:176
 msgid ""
 "Display specific posts using post IDs. This option will override the "
 "category option above."
 msgstr ""
 
-#: inc/widgets/post_widget.php:182
+#: inc/widgets/post_widget.php:181
 msgid "Number of posts to show:"
 msgstr ""
 
-#: inc/widgets/post_widget.php:188
+#: inc/widgets/post_widget.php:186
 msgid "Add Numbering"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:21
+#: inc/widgets/promo_widget.php:19
 msgid "Display a promo box with an image and link"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:27
+#: inc/widgets/promo_widget.php:25
 msgid "Hawthorn: Promo Box"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:107
+#: inc/widgets/promo_widget.php:106
 msgid "Background Image URL"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:109
+#: inc/widgets/promo_widget.php:108
 msgid ""
 "Enter the background image URL you want to use. You can upload your "
 "background image via Media > Add New"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:114
+#: inc/widgets/promo_widget.php:113
 msgid "Promo Text"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:120
+#: inc/widgets/promo_widget.php:119
 msgid "Promo Link"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:122
+#: inc/widgets/promo_widget.php:121
 msgid "Enter a link you want the promo box to go to."
 msgstr ""
 
-#: inc/widgets/promo_widget.php:127
+#: inc/widgets/promo_widget.php:126
 msgid "Promo Box Height"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:133
+#: inc/widgets/promo_widget.php:132
 msgid "Promo Box Margin Bottom"
 msgstr ""
 
-#: inc/widgets/promo_widget.php:139
+#: inc/widgets/promo_widget.php:138
 msgid "Open link in a new tab?"
 msgstr ""
 
-#: inc/widgets/social_widget.php:21
+#: inc/widgets/social_widget.php:19
 msgid "A widget that displays your social icons"
 msgstr ""
 
-#: inc/widgets/social_widget.php:27
+#: inc/widgets/social_widget.php:25
 msgid "Hawthorn: Social Icons"
 msgstr ""
 
-#: inc/widgets/social_widget.php:126
+#: inc/widgets/social_widget.php:123
 msgid "Note: Set your social links in the Customizer"
 msgstr ""
 
-#: inc/widgets/social_widget.php:129
+#: inc/widgets/social_widget.php:126
 msgid "Show Facebook"
 msgstr ""
 
-#: inc/widgets/social_widget.php:134
+#: inc/widgets/social_widget.php:131
 msgid "Show Twitter"
 msgstr ""
 
-#: inc/widgets/social_widget.php:139
+#: inc/widgets/social_widget.php:136
 msgid "Show Instagram"
 msgstr ""
 
-#: inc/widgets/social_widget.php:144
+#: inc/widgets/social_widget.php:141
 msgid "Show Pinterest"
 msgstr ""
 
-#: inc/widgets/social_widget.php:149
+#: inc/widgets/social_widget.php:146
 msgid "Show Bloglovin"
 msgstr ""
 
-#: inc/widgets/social_widget.php:154
+#: inc/widgets/social_widget.php:151
 msgid "Show Google Plus"
 msgstr ""
 
-#: inc/widgets/social_widget.php:159
+#: inc/widgets/social_widget.php:156
 msgid "Show Tumblr"
 msgstr ""
 
-#: inc/widgets/social_widget.php:164
+#: inc/widgets/social_widget.php:161
 msgid "Show Youtube"
 msgstr ""
 
-#: inc/widgets/social_widget.php:169
+#: inc/widgets/social_widget.php:166
 msgid "Show Dribbble"
 msgstr ""
 
-#: inc/widgets/social_widget.php:174
+#: inc/widgets/social_widget.php:171
 msgid "Show Soundcloud"
 msgstr ""
 
-#: inc/widgets/social_widget.php:179
+#: inc/widgets/social_widget.php:176
 msgid "Show Vimeo"
 msgstr ""
 
-#: inc/widgets/social_widget.php:184
+#: inc/widgets/social_widget.php:181
 msgid "Show Linkedin"
 msgstr ""
 
-#: inc/widgets/social_widget.php:189
+#: inc/widgets/social_widget.php:186
 msgid "Show Snapchat"
 msgstr ""
 
-#: inc/widgets/social_widget.php:194
+#: inc/widgets/social_widget.php:191
 msgid "Show RSS"
 msgstr ""
 
