@@ -1,0 +1,1667 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hawthorn\n"
+"POT-Creation-Date: 2019-05-31 15:33-0800\n"
+"PO-Revision-Date: 2019-05-31 15:33-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "404"
+msgstr ""
+
+#: 404.php:21 content-none.php:19
+msgid ""
+"It seems we cannot find what you are looking for. Perhaps searching can help."
+msgstr ""
+
+#: archive.php:9
+msgid "<span>Daily Archives</span>"
+msgstr ""
+
+#: archive.php:11 archive.php:17 archive.php:24
+#, php-format
+msgid "<h1>%s</h1>"
+msgstr ""
+
+#: archive.php:15
+msgid "<span>Monthly Archives</span>"
+msgstr ""
+
+#: archive.php:22
+msgid "<span>Yearly Archives</span>"
+msgstr ""
+
+#: archive.php:27
+msgid "<h1>Archives</h1>"
+msgstr ""
+
+#: author.php:7
+msgid "All Posts By"
+msgstr ""
+
+#: category.php:7
+msgid "Browsing Category"
+msgstr ""
+
+#: category.php:8 search.php:8 tag.php:8
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:386 class-tgm-plugin-activation.php:827
+#: class-tgm-plugin-activation.php:2533 class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:387 class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:388
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:934 class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3509 class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s done."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: comments.php:17
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:17
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:17 content-page.php:49 content.php:158
+msgid "Comments"
+msgstr ""
+
+#: comments.php:41
+msgid "Name"
+msgstr ""
+
+#: comments.php:44
+msgid "Email"
+msgstr ""
+
+#: comments.php:47
+msgid "Website"
+msgstr ""
+
+#: comments.php:50
+msgid ""
+"Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: comments.php:59
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:60
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:61
+msgid "Post Comment"
+msgstr ""
+
+#: content-none.php:6
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:14
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-page.php:33
+msgid "By"
+msgstr ""
+
+#: content.php:142
+msgid "by"
+msgstr ""
+
+#: functions.php:20
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:123
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:129
+msgid "Widgets here will appear vertically to the right of your content."
+msgstr ""
+
+#: functions.php:132
+msgid "Instagram Footer"
+msgstr ""
+
+#: functions.php:138
+msgid ""
+"Use the \"Instagram\" widget here. IMPORTANT: For best result set number of "
+"photos to 8."
+msgstr ""
+
+#: functions.php:141
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:147
+msgid "Widgets here will appear in Footer column 1"
+msgstr ""
+
+#: functions.php:150
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:156
+msgid "Widgets here will appear in Footer column 2"
+msgstr ""
+
+#: functions.php:159
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:165
+msgid "Widgets here will appear in Footer column 3"
+msgstr ""
+
+#: functions.php:168
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:174
+msgid "Widgets here will appear in Footer column 5"
+msgstr ""
+
+#: functions.php:191
+msgid ""
+"<h4 style=\"font-size:20px;\">Hawthorn Demo Content</h4>This option is NOT "
+"recommend if you already have content on your site. Only use this option if "
+"you want to include all the demo content (posts, categories, pages, menus)."
+msgstr ""
+
+#: functions.php:235
+msgid "Reply"
+msgstr ""
+
+#: functions.php:236
+msgid "Edit"
+msgstr ""
+
+#: functions.php:239
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:241
+msgid "Comment awaiting approval"
+msgstr ""
+
+#: functions.php:264 page-blog.php:121
+msgid "Older Posts <i class=\"fa fa-angle-right\"></i>"
+msgstr ""
+
+#: functions.php:265 page-blog.php:122
+msgid "<i class=\"fa fa-angle-left\"></i> Newer Posts"
+msgstr ""
+
+#: functions.php:320
+msgid "WooCommerce Sidebar"
+msgstr ""
+
+#: functions.php:326
+msgid "Widgets here will appear on your WooCommerce shop and product pages."
+msgstr ""
+
+#: functions.php:379
+msgid "View your shopping cart"
+msgstr ""
+
+#: functions/sp_custom_controller.php:59
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:8
+msgid "Color and Style Settings"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:12
+msgid "Background"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:19
+msgid "Header Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:26
+msgid "Navigation Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:33
+msgid "Mobile Menu Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:40
+msgid "Featured Area Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:46
+msgid "Post/Page Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:52
+msgid "Sidebar Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:58
+msgid "Footer Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:64
+msgid "Newsletter Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:70
+msgid "MISC Colors"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:913
+msgid "Background Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:925
+msgid "Background Image"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:937
+msgid "Background Repeat"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:943
+#: functions/sp_customizer_colors.php:1047
+msgid "Repeat"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:944
+#: functions/sp_customizer_colors.php:1048
+msgid "No Repeat"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:945
+#: functions/sp_customizer_colors.php:1049
+msgid "Repeat Y"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:946
+#: functions/sp_customizer_colors.php:1050
+msgid "Repeat X"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:956
+msgid "Background Size"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:962
+#: functions/sp_customizer_colors.php:1066
+msgid "Auto"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:963
+#: functions/sp_customizer_colors.php:1067
+msgid "Cover"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:964
+#: functions/sp_customizer_colors.php:1068
+msgid "Contain"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:974
+msgid "Background Position"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:980
+#: functions/sp_customizer_colors.php:1084
+msgid "Center Center"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:981
+#: functions/sp_customizer_colors.php:1085
+msgid "Center Top"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:982
+#: functions/sp_customizer_colors.php:1086
+msgid "Center Bottom"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:983
+#: functions/sp_customizer_colors.php:1087
+msgid "Right Center"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:984
+#: functions/sp_customizer_colors.php:1088
+msgid "Right Top"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:985
+#: functions/sp_customizer_colors.php:1089
+msgid "Right Bottom"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:986
+#: functions/sp_customizer_colors.php:1090
+msgid "Left Center"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:987
+#: functions/sp_customizer_colors.php:1091
+msgid "Left Top"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:988
+#: functions/sp_customizer_colors.php:1092
+msgid "Left Bottom"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:998
+msgid "Background Attachment"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1004
+#: functions/sp_customizer_colors.php:1108
+msgid "Scroll"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1005
+#: functions/sp_customizer_colors.php:1109
+msgid "Fixed"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1017
+msgid "Header BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1029
+msgid "Header BG Image"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1041
+msgid "Header BG Repeat"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1060
+msgid "Header BG Size"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1078
+msgid "Header BG Position"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1102
+msgid "Header BG Attachment"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1119
+msgid "Social Icon Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1131
+#: functions/sp_customizer_colors.php:1155
+msgid "Social Icon Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1143
+msgid "Search Icon Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1167
+msgid "WooCommerce Cart Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1179
+msgid "WooCommerce Cart Counter Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1193
+msgid "Navigation BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1205
+msgid "Navigation Line Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1217
+msgid "Navigation Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1229
+msgid "Navigation Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1241
+msgid "Navigation Dropdown Arrow Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1253
+msgid "Enable Navigation Bottom Shadow"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1266
+msgid "Navigation Bottom Shadow Opacity (0.0 - 1.0)"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1279
+msgid "Navigation Margin Bottom"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1292
+msgid "Dropdown BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1304
+msgid "Dropdown Border Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1316
+msgid "Dropdown Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1328
+msgid "Dropdown Text Hover BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1340
+msgid "Dropdown Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1354
+msgid "Mobile Top Bar BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1366
+msgid "Show Menu Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1378
+msgid "Show Menu Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1390
+msgid "Mobile Menu Toggle Icon Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1403
+msgid "Mobile Menu Dropdown BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1415
+msgid "Mobile Menu Dropdown Border Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1427
+msgid "Mobile Menu Dropdown Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1439
+msgid "Mobile Menu Dropdown Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1451
+msgid "Mobile Menu Dropdown Text BG Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1463
+msgid "Additional Header Padding Bottom on Mobile Devices"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1478
+msgid "Featured Area BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1490
+msgid "Featured Area Category Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1502
+msgid "Featured Area Title Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1514
+msgid "Featured Area Excerpt Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1526
+msgid "Featured Area Button BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1538
+msgid "Featured Area Button Border Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1550
+msgid "Featured Area Button Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1562
+msgid "Featured Area Button BG Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1574
+msgid "Featured Area Button Border Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1586
+msgid "Featured Area Button Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1598
+msgid "Featured Area Pagination Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1610
+msgid "Featured Area Pagination Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1622
+msgid "Featured Area Pagination Count"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1636
+msgid "Post/Page Title Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1648
+msgid "Post Category Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1660
+msgid "Post Date Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1672
+msgid "Post/Page Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1684
+msgid "Post/Page Headings (H1-H6) Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1696
+msgid "Tag BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1708
+msgid "Tag Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1720
+msgid "Tag BG Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1732
+msgid "Tag Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1744
+msgid "Post Meta Box BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1756
+msgid "Post Meta Box Author Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1768
+msgid "Post Meta Box Share Icon Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1780
+msgid "Post Meta Box Comments Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1792
+msgid "Post/Page Blockquote Border Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1804
+msgid "Post/Page Blockquote Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1816
+msgid "Comment Button BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1828
+msgid "Comment Button Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1840
+msgid "Comment Button BG Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1852
+msgid "Comment Button Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1866
+msgid "Widget Title BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1878
+msgid "Widget Title Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1890
+msgid "Disable Widget Title Shadow"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1903
+msgid "Widget Title Shadow Opacity (0.0 - 1.0)"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1916
+msgid "Social Widget Icon BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1928
+msgid "Social Widget Icon Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1940
+msgid "Social Widget Icon BG Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1952
+msgid "Social Widget Icon Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1964
+msgid "Post Widget Counter BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1976
+msgid "Post Widget Counter Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:1992
+msgid "Footer BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2004
+msgid "Footer Widget Title Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2016
+msgid "Footer Widget Lists (link) Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2028
+msgid "Footer Widget Link Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2040
+msgid "Footer Post Widget Link Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2052
+msgid "Footer Widget Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2065
+msgid "Second Footer BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2077
+msgid "Second Footer Social Icon Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2089
+msgid "Second Footer Social Icon Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2101
+msgid "Second Footer Social Icon Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2113
+msgid "Second Footer Social Icon Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2125
+msgid "Second Footer Social Separator Line Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2137
+msgid "Second Footer Made By text color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2149
+msgid "Second Footer Made By Icon color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2161
+msgid "Second Footer Copyright Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2173
+msgid "Second Footer Copyright Link Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2187
+msgid "Newsletter Widget BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2199
+msgid "Newsletter Widget Title Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2211
+msgid "Newsletter Widget Sub-Title Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2223
+msgid "Newsletter Widget Input BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2235
+msgid "Newsletter Widget Input Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2247
+msgid "Use White Mail Icon"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2262
+msgid "Accent Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2275
+msgid "Pagination BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2287
+msgid "Pagination Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2299
+msgid "Pagination BG Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2311
+msgid "Pagination Text Hover Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2324
+msgid "Category Page Title BG Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2336
+msgid "Category Page Title Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2348
+msgid "Category Page Browsing Text Color"
+msgstr ""
+
+#: functions/sp_customizer_colors.php:2360
+msgid "Category Page Description Text Color"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:6
+msgid "Featured Area Settings"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:76
+msgid "Enable Featured Area"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:89
+msgid "Select Featured Category"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:102
+msgid "Select featured post/page IDs"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:116
+msgid "Amount of slides"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:130
+msgid "Hide Categories"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:143
+msgid "Hide Post Title"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:156
+msgid "Hide Excerpt"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:169
+msgid "Hide Read More Button"
+msgstr ""
+
+#: functions/sp_customizer_featured.php:182
+msgid "Hide Pagination Counter"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:6
+msgid "Footer Settings"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:30
+msgid "Made with <i class=\"fa fa-heart\"></i> in Seattle."
+msgstr ""
+
+#: functions/sp_customizer_footer.php:37
+msgid ""
+"(C) Copyright 2018 - Solo Pine Designs. All Rights Reserved. Designed & "
+"Developed by <a href=\"//solopine.com\">Solo Pine</a>."
+msgstr ""
+
+#: functions/sp_customizer_footer.php:55
+msgid "Footer Columns"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:61
+msgid "4 Columns"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:62
+msgid "3 Columns"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:73
+msgid "Hide Footer Widget Area"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:86
+msgid "Hide Footer Social Links"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:100
+msgid "Footer Text 1"
+msgstr ""
+
+#: functions/sp_customizer_footer.php:113
+msgid "Footer Text 2"
+msgstr ""
+
+#: functions/sp_customizer_general.php:6
+msgid "General Settings"
+msgstr ""
+
+#: functions/sp_customizer_general.php:62
+msgid "Disable Responsive"
+msgstr ""
+
+#: functions/sp_customizer_general.php:75
+msgid "Homepage Layout"
+msgstr ""
+
+#: functions/sp_customizer_general.php:81
+#: functions/sp_customizer_general.php:103
+msgid "Full Post Layout"
+msgstr ""
+
+#: functions/sp_customizer_general.php:82
+#: functions/sp_customizer_general.php:104
+msgid "Grid Layout"
+msgstr ""
+
+#: functions/sp_customizer_general.php:83
+#: functions/sp_customizer_general.php:105
+msgid "1 Full then Grid"
+msgstr ""
+
+#: functions/sp_customizer_general.php:84
+#: functions/sp_customizer_general.php:106
+msgid "List Layout"
+msgstr ""
+
+#: functions/sp_customizer_general.php:85
+#: functions/sp_customizer_general.php:107
+msgid "1 Full then List"
+msgstr ""
+
+#: functions/sp_customizer_general.php:86
+#: functions/sp_customizer_general.php:108
+msgid "Alternating List Layout"
+msgstr ""
+
+#: functions/sp_customizer_general.php:87
+#: functions/sp_customizer_general.php:109
+msgid "1 Full then Alternating List Layout"
+msgstr ""
+
+#: functions/sp_customizer_general.php:97
+msgid "Archive Layout"
+msgstr ""
+
+#: functions/sp_customizer_general.php:121
+msgid "Disable Sidebar on Homepage"
+msgstr ""
+
+#: functions/sp_customizer_general.php:134
+msgid "Disable Sidebar on Archive Pages"
+msgstr ""
+
+#: functions/sp_customizer_general.php:147
+msgid "Homepage/Archive Post Summary Type"
+msgstr ""
+
+#: functions/sp_customizer_general.php:153
+msgid "Use Excerpt"
+msgstr ""
+
+#: functions/sp_customizer_general.php:154
+msgid "Use Read More Tag"
+msgstr ""
+
+#: functions/sp_customizer_header.php:6
+msgid "Header & Logo Settings"
+msgstr ""
+
+#: functions/sp_customizer_header.php:60
+msgid "Upload Logo"
+msgstr ""
+
+#: functions/sp_customizer_header.php:73
+msgid "Header Logo Padding Top"
+msgstr ""
+
+#: functions/sp_customizer_header.php:86
+msgid "Header Logo Padding Bottom"
+msgstr ""
+
+#: functions/sp_customizer_header.php:99
+msgid "Disable Header Padding"
+msgstr ""
+
+#: functions/sp_customizer_header.php:112
+msgid "Hide Social Icons"
+msgstr ""
+
+#: functions/sp_customizer_header.php:125
+msgid "Hide Search Icon"
+msgstr ""
+
+#: functions/sp_customizer_page.php:6
+msgid "Page Settings"
+msgstr ""
+
+#: functions/sp_customizer_page.php:39
+msgid "Hide Page Title"
+msgstr ""
+
+#: functions/sp_customizer_page.php:53
+msgid "Hide Page Share"
+msgstr ""
+
+#: functions/sp_customizer_page.php:67
+msgid "Hide Page Author Name"
+msgstr ""
+
+#: functions/sp_customizer_post.php:6
+msgid "Post Settings"
+msgstr ""
+
+#: functions/sp_customizer_post.php:125
+msgid "Set default post layout"
+msgstr ""
+
+#: functions/sp_customizer_post.php:131
+msgid "Post w/ Sidebar"
+msgstr ""
+
+#: functions/sp_customizer_post.php:132
+msgid "Full Width Post"
+msgstr ""
+
+#: functions/sp_customizer_post.php:133
+msgid "Full Width Narrow Post"
+msgstr ""
+
+#: functions/sp_customizer_post.php:143
+msgid "Featured Image (On Top of Post)"
+msgstr ""
+
+#: functions/sp_customizer_post.php:149
+msgid "Display Featured Image"
+msgstr ""
+
+#: functions/sp_customizer_post.php:150
+msgid "Hide Featured Image"
+msgstr ""
+
+#: functions/sp_customizer_post.php:151
+msgid "Hide Featured Image only on single post pages"
+msgstr ""
+
+#: functions/sp_customizer_post.php:161
+msgid "Hide Category"
+msgstr ""
+
+#: functions/sp_customizer_post.php:175 inc/widgets/post_widget.php:194
+msgid "Hide Date"
+msgstr ""
+
+#: functions/sp_customizer_post.php:189
+msgid "Hide Author Name"
+msgstr ""
+
+#: functions/sp_customizer_post.php:202
+msgid "Hide All Share Buttons"
+msgstr ""
+
+#: functions/sp_customizer_post.php:215
+msgid "Hide Facebook Share Button"
+msgstr ""
+
+#: functions/sp_customizer_post.php:228
+msgid "Hide Twitter Share Button"
+msgstr ""
+
+#: functions/sp_customizer_post.php:241
+msgid "Hide Pinterest Share Button"
+msgstr ""
+
+#: functions/sp_customizer_post.php:254
+msgid "Hide LinkedIn Share Button"
+msgstr ""
+
+#: functions/sp_customizer_post.php:269
+msgid "Hide Comment Link"
+msgstr ""
+
+#: functions/sp_customizer_post.php:282
+msgid "Hide Tags"
+msgstr ""
+
+#: functions/sp_customizer_post.php:295
+msgid "Hide Related Posts Box"
+msgstr ""
+
+#: functions/sp_customizer_post.php:308
+msgid "Hide Related Posts Date"
+msgstr ""
+
+#: functions/sp_customizer_post.php:321
+msgid "Hide Post Pagination"
+msgstr ""
+
+#: functions/sp_customizer_woo.php:6
+msgid "WooCommerce Settings"
+msgstr ""
+
+#: functions/sp_customizer_woo.php:7
+msgid "WooCommerce theme related settings."
+msgstr ""
+
+#: functions/sp_customizer_woo.php:42
+msgid "Hide Cart Icon in Header"
+msgstr ""
+
+#: functions/sp_customizer_woo.php:56
+msgid "Shop Page Layout"
+msgstr ""
+
+#: functions/sp_customizer_woo.php:62
+msgid "Sidebar Layout"
+msgstr ""
+
+#: functions/sp_customizer_woo.php:63
+msgid "Full Width Layout"
+msgstr ""
+
+#: functions/sp_customizer_woo.php:74
+msgid "Products Per Page"
+msgstr ""
+
+#: inc/featured/featured.php:89
+msgid "Read More"
+msgstr ""
+
+#: inc/templates/post-pagination.php:23
+msgid "Previous Post"
+msgstr ""
+
+#: inc/templates/post-pagination.php:42
+msgid "Next Post"
+msgstr ""
+
+#: inc/templates/post-related.php:27
+msgid "You Might Also Like..."
+msgstr ""
+
+#: inc/widgets/about_widget.php:21
+msgid "An About Me Widget"
+msgstr ""
+
+#: inc/widgets/about_widget.php:27
+msgid "Hawthorn: About Me"
+msgstr ""
+
+#: inc/widgets/about_widget.php:100 inc/widgets/facebook_widget.php:90
+#: inc/widgets/promo_widget.php:101 inc/widgets/social_widget.php:122
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/about_widget.php:106
+msgid "Image URL"
+msgstr ""
+
+#: inc/widgets/about_widget.php:108
+msgid ""
+"Enter the image URL you want to use. You can upload your image via Media > "
+"Add New"
+msgstr ""
+
+#: inc/widgets/about_widget.php:113
+msgid "Image Link"
+msgstr ""
+
+#: inc/widgets/about_widget.php:115
+msgid "Enter a link you want the about me image to go to."
+msgstr ""
+
+#: inc/widgets/about_widget.php:120
+msgid "About me text"
+msgstr ""
+
+#: inc/widgets/about_widget.php:126
+msgid "Autograph Image URL"
+msgstr ""
+
+#: inc/widgets/facebook_widget.php:20
+msgid "A widget that displays a Facebook Like Box"
+msgstr ""
+
+#: inc/widgets/facebook_widget.php:26
+msgid "Hawthorn: Facebook Like Box"
+msgstr ""
+
+#: inc/widgets/facebook_widget.php:96
+msgid "Facebook Page URL"
+msgstr ""
+
+#: inc/widgets/facebook_widget.php:98
+msgid "Example. https://www.facebook.com/envato"
+msgstr ""
+
+#: inc/widgets/facebook_widget.php:103
+msgid "Show Faces"
+msgstr ""
+
+#: inc/widgets/facebook_widget.php:109
+msgid "Show Stream"
+msgstr ""
+
+#: inc/widgets/facebook_widget.php:115
+msgid "Show Page Cover Image"
+msgstr ""
+
+#: inc/widgets/post_widget.php:21
+msgid ""
+"A post widget that can display your latest posts, posts from a category, or "
+"hand-picked posts by ID."
+msgstr ""
+
+#: inc/widgets/post_widget.php:27
+msgid "Hawthorn: Post Widget"
+msgstr ""
+
+#: inc/widgets/post_widget.php:142
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/widgets/post_widget.php:147
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/post_widget.php:153
+msgid "Choose Layout"
+msgstr ""
+
+#: inc/widgets/post_widget.php:155
+msgid "Small Thumbnail"
+msgstr ""
+
+#: inc/widgets/post_widget.php:156
+msgid "Big Thumbnail"
+msgstr ""
+
+#: inc/widgets/post_widget.php:157
+msgid "Big Thumbnail w/ Overlay"
+msgstr ""
+
+#: inc/widgets/post_widget.php:163
+msgid "Filter by Category"
+msgstr ""
+
+#: inc/widgets/post_widget.php:165
+msgid "All categories"
+msgstr ""
+
+#: inc/widgets/post_widget.php:175
+msgid "Post IDs (separate with comma):"
+msgstr ""
+
+#: inc/widgets/post_widget.php:177
+msgid ""
+"Display specific posts using post IDs. This option will override the "
+"category option above."
+msgstr ""
+
+#: inc/widgets/post_widget.php:182
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/widgets/post_widget.php:188
+msgid "Add Numbering"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:21
+msgid "Display a promo box with an image and link"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:27
+msgid "Hawthorn: Promo Box"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:107
+msgid "Background Image URL"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:109
+msgid ""
+"Enter the background image URL you want to use. You can upload your "
+"background image via Media > Add New"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:114
+msgid "Promo Text"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:120
+msgid "Promo Link"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:122
+msgid "Enter a link you want the promo box to go to."
+msgstr ""
+
+#: inc/widgets/promo_widget.php:127
+msgid "Promo Box Height"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:133
+msgid "Promo Box Margin Bottom"
+msgstr ""
+
+#: inc/widgets/promo_widget.php:139
+msgid "Open link in a new tab?"
+msgstr ""
+
+#: inc/widgets/social_widget.php:21
+msgid "A widget that displays your social icons"
+msgstr ""
+
+#: inc/widgets/social_widget.php:27
+msgid "Hawthorn: Social Icons"
+msgstr ""
+
+#: inc/widgets/social_widget.php:126
+msgid "Note: Set your social links in the Customizer"
+msgstr ""
+
+#: inc/widgets/social_widget.php:129
+msgid "Show Facebook"
+msgstr ""
+
+#: inc/widgets/social_widget.php:134
+msgid "Show Twitter"
+msgstr ""
+
+#: inc/widgets/social_widget.php:139
+msgid "Show Instagram"
+msgstr ""
+
+#: inc/widgets/social_widget.php:144
+msgid "Show Pinterest"
+msgstr ""
+
+#: inc/widgets/social_widget.php:149
+msgid "Show Bloglovin"
+msgstr ""
+
+#: inc/widgets/social_widget.php:154
+msgid "Show Google Plus"
+msgstr ""
+
+#: inc/widgets/social_widget.php:159
+msgid "Show Tumblr"
+msgstr ""
+
+#: inc/widgets/social_widget.php:164
+msgid "Show Youtube"
+msgstr ""
+
+#: inc/widgets/social_widget.php:169
+msgid "Show Dribbble"
+msgstr ""
+
+#: inc/widgets/social_widget.php:174
+msgid "Show Soundcloud"
+msgstr ""
+
+#: inc/widgets/social_widget.php:179
+msgid "Show Vimeo"
+msgstr ""
+
+#: inc/widgets/social_widget.php:184
+msgid "Show Linkedin"
+msgstr ""
+
+#: inc/widgets/social_widget.php:189
+msgid "Show Snapchat"
+msgstr ""
+
+#: inc/widgets/social_widget.php:194
+msgid "Show RSS"
+msgstr ""
+
+#: search.php:7
+msgid "Search results"
+msgstr ""
+
+#: tag.php:7
+msgid "Browsing Tag"
+msgstr ""
